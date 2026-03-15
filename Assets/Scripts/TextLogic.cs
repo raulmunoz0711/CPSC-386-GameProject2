@@ -25,8 +25,8 @@ public class TextLogic : MonoBehaviour
         SceneManager.LoadScene("Main Menu");
     }
 
-    public void leveloOer()
+    public void settingsScne()
     {
-
+        SceneManager.LoadScene("SettingScene");
     }
 }

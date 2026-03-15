@@ -57,17 +57,17 @@ public class PlayerScript : MonoBehaviour
         if (finish != null)
         {
             //Change Wall Color from red to green
-            SpriteRenderer sr = finish.GetComponent<SpriteRenderer>();
-            if (sr != null)
+            SpriteRenderer sprite = finish.GetComponent<SpriteRenderer>();
+            if (sprite != null)
             {
-                sr.color = Color.green;
+                sprite.color = Color.green;
             }
 
             //Ensures that the finish is open when the player makes collisions with all keys.
-            Collider2D col = finish.GetComponent<Collider2D>();
-            if (col != null)
+            Collider2D collide = finish.GetComponent<Collider2D>();
+            if (collide != null)
             {
-                col.isTrigger = true;
+                collide.isTrigger = true;
             }
 
             Debug.Log("Finish unlocked!");
