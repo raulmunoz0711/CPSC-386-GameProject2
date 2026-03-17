@@ -42,4 +42,9 @@ public class TextLogic : MonoBehaviour
     {
         SceneManager.LoadScene("SettingScene");
     }
+
+    public void levelselection()
+    {
+        SceneManager.LoadScene("Level Selection");
+    }
 }

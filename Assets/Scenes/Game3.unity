@@ -1440,7 +1440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   LevelCompleteUI: {fileID: 1928872751}
-  nextLevelScene: MainMenu
+  nextLevelScene: 
 --- !u!4 &312978676
 Transform:
   m_ObjectHideFlags: 0
@@ -2035,8 +2035,8 @@ Transform:
   m_GameObject: {fileID: 454947607}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 1.68, y: -4.0329, z: 0}
-  m_LocalScale: {x: 5.532054, y: 0.5026586, z: 1}
+  m_LocalPosition: {x: 1.6382, y: -4.0329, z: 0}
+  m_LocalScale: {x: 5.532054, y: 0.8663321, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 261879708}
@@ -3309,7 +3309,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 312978675}
         m_TargetAssemblyTypeName: TextLogic, Assembly-CSharp
-        m_MethodName: nextLevel
+        m_MethodName: levelselection
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7969,7 +7969,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1928872752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9306,6 +9306,6 @@ SceneRoots:
   - {fileID: 261879708}
   - {fileID: 171781883}
   - {fileID: 210882782}
+  - {fileID: 493511866}
   - {fileID: 312978676}
   - {fileID: 1928872755}
-  - {fileID: 493511866}
