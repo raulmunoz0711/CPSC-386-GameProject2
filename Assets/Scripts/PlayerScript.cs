@@ -7,7 +7,7 @@ public class PlayerScript : MonoBehaviour
 
     public float playerSpeed = 5f;
     
-    public int totalKeys = 1;               //1 Key need to pass this level
+    public int totalKeys;               //Key need to pass this level
     private int keysCollected = 0;
 
     public GameObject finish;
@@ -16,7 +16,8 @@ public class PlayerScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        //Changes the total of key required to exit level. Must have key tag.
+        totalKeys = GameObject.FindGameObjectsWithTag("key").Length;
     }
 
     // Update is called once per frame
@@ -34,12 +35,16 @@ public class PlayerScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //If player collides with gameObject that has tag key
         if (collision.CompareTag("key"))
         {
             keysCollected++;                //Will increase +1 when key collected
             Destroy(collision.gameObject);  //The key is no longer on screen
+            
+            //Will log that key that has been collected
             Debug.Log("The key has been collected.");
 
+            //Once keys collected is equal to keys on map, finish is unlocked
             if (keysCollected >= totalKeys)
             {
                 UnlockFinish();
@@ -59,17 +64,17 @@ public class PlayerScript : MonoBehaviour
     }
 
     private void UnlockFinish()
-    {
+    {   //If finish is open
         if (finish != null)
         {
             //Change Wall Color from red to green
-            SpriteRenderer sprite = finish.GetComponent<SpriteRenderer>();
-            if (sprite != null)
+            SpriteRenderer finishBox = finish.GetComponent<SpriteRenderer>();
+            if (finishBox != null)
             {
-                sprite.color = Color.green;
+                finishBox.color = Color.green;
             }
 
-            //Ensures that the finish is open when the player makes collisions with all keys.
+            //Player can complete the level by running into box
             Collider2D collide = finish.GetComponent<Collider2D>();
             if (collide != null)
             {
