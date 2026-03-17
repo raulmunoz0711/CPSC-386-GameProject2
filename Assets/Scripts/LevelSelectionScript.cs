@@ -22,17 +22,21 @@ public class LevelSelectionScript : MonoBehaviour
     public void level1()
     {
         SceneManager.LoadScene("Game1");
+        Debug.Log("Player loaded game1");
     }
     public void level2()
     {
         SceneManager.LoadScene("Game2");
+        Debug.Log("Player loaded game2");
     }
     public void level3()
     {
         SceneManager.LoadScene("Game3");
+        Debug.Log("Player loaded game3");
     }
     public void returnMainmenu()
     {
         SceneManager.LoadScene("Main Menu");
+        Debug.Log("Player loaded Main Menu");
     }
 }

@@ -9,6 +9,7 @@ public class MainMenuScript : MonoBehaviour
     {
         //Takes user to GameScene
         SceneManager.LoadScene("Level Selection");
+        Debug.Log("Player loaded Level Selection Scene");
     }
 
     public void exitGame()
@@ -22,5 +23,6 @@ public class MainMenuScript : MonoBehaviour
     {
         //Takes user to SettingsScene
         SceneManager.LoadScene("SettingScene");
+        Debug.Log("Player loaded Settings Scene");
     }
 }

@@ -20,6 +20,7 @@ public class TextLogic : MonoBehaviour
         if (Keyboard.current.escapeKey.isPressed)
         {
             SceneManager.LoadScene("SettingScene");
+            Debug.Log("Player loaded Settings Scene through esc key");
         }
     }
 
@@ -31,20 +32,24 @@ public class TextLogic : MonoBehaviour
     {
         //Allows me to keep player prefab and type in name of scene on unity.
         SceneManager.LoadScene(nextLevelScene);
+        Debug.Log("Player loaded next level");
     }
 
     public void returnToMainMenu()
     {
         SceneManager.LoadScene("Main Menu");
+        Debug.Log("Player returned to Main Menu");
     }
 
     public void settingsScene()
     {
         SceneManager.LoadScene("SettingScene");
+        Debug.Log("Player loaded Settings Scene");
     }
 
     public void levelselection()
     {
         SceneManager.LoadScene("Level Selection");
+        Debug.Log("Player loaded Level Selection Scene");
     }
 }
