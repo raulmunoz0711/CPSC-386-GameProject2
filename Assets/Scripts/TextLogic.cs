@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class TextLogic : MonoBehaviour
 {
     public GameObject LevelCompleteUI;
+    public string nextLevelScene;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,7 +29,8 @@ public class TextLogic : MonoBehaviour
     }
     public void nextLevel()
     {
-        SceneManager.LoadScene("Game2");
+        //Allows me to keep player prefab and type in name of scene on unity.
+        SceneManager.LoadScene(nextLevelScene);
     }
 
     public void returnToMainMenu()

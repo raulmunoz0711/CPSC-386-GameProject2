@@ -42,7 +42,7 @@ public class PlayerScript : MonoBehaviour
             Destroy(collision.gameObject);  //The key is no longer on screen
             
             //Will log that key that has been collected
-            Debug.Log("The key has been collected.");
+            Debug.Log("A key has been collected.");
 
             //Once keys collected is equal to keys on map, finish is unlocked
             if (keysCollected >= totalKeys)
