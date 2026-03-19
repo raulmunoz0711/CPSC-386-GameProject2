@@ -209,7 +209,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.012780517, y: -0.021444619}
+  m_Offset: {x: -0.012780517, y: -0.015064374}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -219,7 +219,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.36292905, y: 0.37449485}
+  m_Size: {x: 0.36292905, y: 0.29537866}
   m_EdgeRadius: 0
 --- !u!212 &359934
 SpriteRenderer:
@@ -508,7 +508,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.012780517, y: -0.021444619}
+  m_Offset: {x: -0.012780517, y: -0.018367082}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -518,7 +518,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.36292905, y: 0.37449485}
+  m_Size: {x: 0.36292905, y: 0.2944796}
   m_EdgeRadius: 0
 --- !u!212 &117808374
 SpriteRenderer:
@@ -3418,7 +3418,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.012780517, y: -0.021444619}
+  m_Offset: {x: -0.04355556, y: -0.049142182}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3428,7 +3428,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.36292905, y: 0.37449485}
+  m_Size: {x: 0.30137897, y: 0.31909972}
   m_EdgeRadius: 0
 --- !u!212 &730819589
 SpriteRenderer:
@@ -3791,7 +3791,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.012780517, y: -0.021444619}
+  m_Offset: {x: -0.012780517, y: -0.061452202}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -3801,7 +3801,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.36292905, y: 0.37449485}
+  m_Size: {x: 0.36292905, y: 0.29447967}
   m_EdgeRadius: 0
 --- !u!212 &756638572
 SpriteRenderer:
@@ -8230,7 +8230,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6578808, g: 0.5586953, b: 0.764151, a: 0}
+  m_BackGroundColor: {r: 0.3485226, g: 0.8301887, b: 0.7726943, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

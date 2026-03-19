@@ -30,9 +30,23 @@ public class TextLogic : MonoBehaviour
     }
     public void nextLevel()
     {
-        //Allows me to keep player prefab and type in name of scene on unity.
-        SceneManager.LoadScene(nextLevelScene);
-        Debug.Log("Player loaded next level");
+        /// Implemented with AI ///
+        string currentScene = SceneManager.GetActiveScene().name;
+
+        if (currentScene == "Game1")
+            PlayerPrefs.SetInt("Level1Complete", 1);
+        else if (currentScene == "Game2")
+            PlayerPrefs.SetInt("Level2Complete", 1);
+
+        PlayerPrefs.Save();
+        Debug.Log(currentScene + " markes as complete.");
+
+        if (!string.IsNullOrEmpty(nextLevelScene))
+        {
+            SceneManager.LoadScene(nextLevelScene);
+            Debug.Log("Player loaded next level");
+        }
+        /// Implemented with AI ///
     }
 
     public void returnToMainMenu()
