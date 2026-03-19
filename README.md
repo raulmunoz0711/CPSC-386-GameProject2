@@ -10,6 +10,8 @@ Free Rotating Key - Animated Pixel Art by Frakassets. (n.d.). Itch.io. https://f
 
 Musical Toasters. (2019, June 4). Good Egg Galaxy - Super Mario Galaxy Music. YouTube. https://www.youtube.com/watch?v=56TfZJoZxv8&list=RD56TfZJoZxv8  
 
+OpenAI. “ChatGPT.” Chat.openai.com, OpenAI, 2025, chat.openai.com.  
+
 Unity Technologies. (2010, October 23). Using singleton for background music. Unity Discussions. https://discussions.unity.com/t/using-singleton-for-background-music/8967  
 
 Wild Cockatiel Games. (2024, October 22). How to Setup Animator and Animations in Unity 2D. YouTube. https://www.youtube.com/watch?v=AdQz2wStdLY  
