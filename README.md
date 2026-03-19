@@ -28,4 +28,6 @@ Unity Technologies: See how others add music to all scenes and ensure it survive
 
 “Good Egg Galaxy - Super Mario Galaxy Music” - Used as background music.  
 
-Wild Cockatiel Games - This is where I located the sprites used for the key animation.
+Musical Toasters - This is where I located the sprites used for the key animation.  
+
+Wild Cockatiel Games - This video was used for me to gain an understanding of how to implement a simple animation into my game.
