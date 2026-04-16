@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 public class TextLogic : MonoBehaviour
 {
     public GameObject LevelCompleteUI;
+    public GameObject GamePausedUI;
+    private bool GameisPaused = false;
+
     public string nextLevelScene;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,10 +20,10 @@ public class TextLogic : MonoBehaviour
     void Update()
     {
         //Opens settings at any point during the game
-        if (Keyboard.current.escapeKey.isPressed)
+        if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
-            SceneManager.LoadScene("SettingScene");
-            Debug.Log("Player loaded Settings Scene through esc key");
+            TogglePause();
+            Debug.Log("Player Loaded Pause Menu");
         }
     }
 
@@ -65,5 +68,34 @@ public class TextLogic : MonoBehaviour
     {
         SceneManager.LoadScene("Level Selection");
         Debug.Log("Player loaded Level Selection Scene");
+    }
+
+    public void exitGame()
+    {
+        Application.Quit();
+        Debug.Log("User Quit Game");
+    }
+
+    void TogglePause()
+    {
+        GameisPaused = !GameisPaused;
+        GamePausedUI.SetActive(GameisPaused);
+        if (GameisPaused)
+        {
+            //Paused Game
+            Time.timeScale = 0f;
+        }
+        else
+        {
+            //Resumes Game
+            Time.timeScale = 1f;
+        }
+    }
+
+    public void resumeGame()
+    {
+        GameisPaused = false;
+        GamePausedUI.SetActive(false);
+        Time.timeScale = 1f;
     }
 }
