@@ -10,12 +10,15 @@ public class BombSpawnerScript : MonoBehaviour
 
     void Update()
     {
+        //Has enough time passed to spawn a new bomb
         if (timer < spawnRate)
         {
+            //Increases the timer
             timer += Time.deltaTime;
         }
         else
         {
+            //spawn a new bomb and reset the timer.
             SpawnBomb();
             timer = 0f;
         }
@@ -23,6 +26,7 @@ public class BombSpawnerScript : MonoBehaviour
 
     void SpawnBomb()
     {
+        //Provides a maximum and minimum height in which bombs will spawn
         float lowestPoint = transform.position.y - heightOffset;
         float highestPoint = transform.position.y + heightOffset;
 
