@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class LevelSelectionScript : MonoBehaviour
 {
     /// Implemented with AI ///
-    public Button tutorial;
+    public Button tutorialbutton;
     public Button level1Button;
     public Button level2Button;
     public Button level3Button;
@@ -16,8 +16,8 @@ public class LevelSelectionScript : MonoBehaviour
     void Start()
     {
         //Tutorial is always unloced
-        if (tutorial != null)
-            tutorial.interactable = true;
+        if (tutorialbutton != null)
+            tutorialbutton.interactable = true;
 
          // Level 1 is only unlocked once tutorial is complete
         if (level1Button != null)
@@ -45,6 +45,7 @@ public class LevelSelectionScript : MonoBehaviour
 
     public void tutoriallevel()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Tutorial");
         Debug.Log("Player loaded tutorial.");
     }
@@ -53,6 +54,7 @@ public class LevelSelectionScript : MonoBehaviour
     {
         if (PlayerPrefs.GetInt("TutorialComplete", 0) == 1) 
         {
+            Time.timeScale = 1f;
             SceneManager.LoadScene("Game1");
             Debug.Log("Player loaded game1");
         }
@@ -67,6 +69,7 @@ public class LevelSelectionScript : MonoBehaviour
         if (PlayerPrefs.GetInt("Level1Complete", 0) == 1)
         /// Implemented with AI ///
         {
+            Time.timeScale = 1f;
             SceneManager.LoadScene("Game2");
             Debug.Log("Player loaded game2");
         }
@@ -82,6 +85,7 @@ public class LevelSelectionScript : MonoBehaviour
         if (PlayerPrefs.GetInt("Level2Complete", 0) == 1)
         /// Implemented with AI ///
         {
+            Time.timeScale = 1f;
             SceneManager.LoadScene("Game3");
             Debug.Log("Player loaded game3");
         }
@@ -94,6 +98,7 @@ public class LevelSelectionScript : MonoBehaviour
 
     public void returnMainmenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("Main Menu");
         Debug.Log("Player loaded Main Menu");
     }
