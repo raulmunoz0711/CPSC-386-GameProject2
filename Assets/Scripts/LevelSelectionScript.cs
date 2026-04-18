@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class LevelSelectionScript : MonoBehaviour
 {
     /// Implemented with AI ///
-    public Button tutorialbutton;
+
     public Button level1Button;
     public Button level2Button;
     public Button level3Button;
@@ -15,13 +15,9 @@ public class LevelSelectionScript : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Tutorial is always unloced
-        if (tutorialbutton != null)
-            tutorialbutton.interactable = true;
-
-         // Level 1 is only unlocked once tutorial is complete
+        //Level 1 is always unlocekd as tutorial is optional
         if (level1Button != null)
-            level1Button.interactable = PlayerPrefs.GetInt("TutorialComplete", 0) == 1;
+            level1Button.interactable = true;
         
         /// Implemented with AI ///
         // Lock Level 2 if Level1 not completed
@@ -45,6 +41,7 @@ public class LevelSelectionScript : MonoBehaviour
 
     public void tutoriallevel()
     {
+        //Ensures the game is on and player can move.
         Time.timeScale = 1f;
         SceneManager.LoadScene("Tutorial");
         Debug.Log("Player loaded tutorial.");
@@ -52,16 +49,9 @@ public class LevelSelectionScript : MonoBehaviour
 
     public void level1()
     {
-        if (PlayerPrefs.GetInt("TutorialComplete", 0) == 1) 
-        {
-            Time.timeScale = 1f;
-            SceneManager.LoadScene("Game1");
-            Debug.Log("Player loaded game1");
-        }
-        else
-        {
-            Debug.Log("Level 1 is locked.");
-        }
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Game1");
+        Debug.Log("Player loaded game1");
     }
     public void level2()
     {
